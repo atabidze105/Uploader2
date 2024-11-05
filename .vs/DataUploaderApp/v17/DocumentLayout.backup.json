@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\addwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\addwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\addwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\addwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\savingdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\savingdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\models\\listphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\models\\listphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|c:\\users\\etoch\\source\\repos\\uploader-main\\datauploaderapp\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A56AF4-20BC-421B-8718-58EF6A8A1738}|DataUploaderApp\\DataUploaderApp.csproj|solutionrelative:datauploaderapp\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\Models\\Photo.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Models\\Photo.cs",
+              "RelativeToolTip": "DataUploaderApp\\Models\\Photo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:41:53.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListPhoto.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Models\\ListPhoto.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\Models\\ListPhoto.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Models\\ListPhoto.cs",
+              "RelativeToolTip": "DataUploaderApp\\Models\\ListPhoto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T16:01:01.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Models\\Article.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\Models\\Article.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Models\\Article.cs",
+              "RelativeToolTip": "DataUploaderApp\\Models\\Article.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T16:01:00.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Helper.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\Helper.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\Helper.cs",
+              "RelativeToolTip": "DataUploaderApp\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:06:57.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SavingDate.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\SavingDate.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\SavingDate.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\SavingDate.cs",
+              "RelativeToolTip": "DataUploaderApp\\SavingDate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:29:53.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\AddWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\AddWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\AddWindow.axaml.cs*",
+              "RelativeToolTip": "DataUploaderApp\\AddWindow.axaml.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwFMAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:25:27.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\AddWindow.axaml",
+              "RelativeDocumentMoniker": "DataUploaderApp\\AddWindow.axaml",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\AddWindow.axaml",
+              "RelativeToolTip": "DataUploaderApp\\AddWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T14:25:26.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "DataUploaderApp\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\MainWindow.axaml",
+              "RelativeToolTip": "DataUploaderApp\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T14:25:04.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "DataUploaderApp\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\etoch\\source\\repos\\Uploader-main\\DataUploaderApp\\MainWindow.axaml.cs",
+              "RelativeToolTip": "DataUploaderApp\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAwwGUAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:25:05.639Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

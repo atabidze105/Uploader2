@@ -1,0 +1,124 @@
+<Window 
+	xmlns="https://github.com/avaloniaui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="870" d:DesignHeight="900"
+	Height="900" Width="870"
+	CanResize="False"
+	WindowStartupLocation="CenterOwner"
+	x:Class="DataUploaderApp.MainWindow"
+	Title="DataUploaderApp" x:CompileBindings="False">
+	<Grid
+		ShowGridLines="False"
+		ColumnDefinitions="*,*,2*"
+		RowDefinitions="auto,auto,auto,*">
+		<!--Строка поиска-->
+		<TextBox
+			Name="tbox_searchbar"
+			Watermark="Найти..."
+			KeyUp="TextBox_KeyUp"
+			Height="40" Margin="10 10 10 60"
+			Grid.ColumnSpan="2" FontSize="16"
+			VerticalContentAlignment="Center"/>
+		<!--Панель фильтрации и сортировки-->
+		<StackPanel
+			Orientation="Vertical"
+			Grid.Column="2"
+			HorizontalAlignment="Center"
+			Margin="10">
+			<!--Текстовые обозначения-->
+			<StackPanel
+				Orientation="Horizontal">
+				<TextBlock
+					Text="Фильтрация"/>
+				<TextBlock
+					Text="Выбор категории"
+					Margin="65 0 0 0"/>
+			</StackPanel>
+			
+			<StackPanel
+				Orientation="Horizontal">
+				<!--Фильтрация-->
+				<ComboBox
+				Name="cbox_filtration"
+				HorizontalAlignment="Center"
+				SelectionChanged="ComboBox_Filtration">
+					<ComboBoxItem
+						Content="По умолчанию"/>
+					<ComboBoxItem
+						Content="По алфавиту (А-Я)"/>
+					<ComboBoxItem
+						Content="По алфавиту (Я-А)"/>
+					<ComboBoxItem
+						Content="По номерам (по возрастанию)"/>
+					<ComboBoxItem
+						Content="По номерам (по убыванию)"/>
+					<ComboBoxItem
+						Content="По датам (От новых)"/>
+					<ComboBoxItem
+						Content="По датам (От старых)"/>
+				</ComboBox>
+				<!--Выборка-->
+				<ComboBox
+					Name="cbox_selection"
+					HorizontalAlignment="Center"
+					SelectionChanged="ComboBox_Selection">
+					<ComboBoxItem
+						Content="По умолчанию"/>
+				</ComboBox>
+			</StackPanel>
+			
+			<!--Добавить объект-->
+			<Button
+				Name="btn_addItem"
+				Content="Добавить"
+				VerticalContentAlignment="Bottom"
+				HorizontalContentAlignment="Center"
+				HorizontalAlignment="Right"
+				Margin="0 10"
+				Click="OpenAddWindow"/>
+		</StackPanel>
+		<!--Верхняя панель-->
+		<Panel
+			VerticalAlignment="Bottom" Grid.ColumnSpan="3"
+			Grid.Row="1" Margin="10 0">
+			<Grid
+				ColumnDefinitions="100,*,*,*">
+				<TextBlock Text="Номер записи"/>
+				<TextBlock Grid.Column="1" Text="Название"/>
+				<TextBlock Grid.Column="2" Text="Категория"/>
+				<TextBlock Grid.Column="3" Text="Дата добавления"/>
+			</Grid>
+		</Panel>
+		<!--Все объекты-->
+		<ListBox
+			Name="lbox_items"  
+			Grid.Row="2" Height="720" Grid.ColumnSpan="3">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Panel
+						DoubleTapped="Panel_DoubleTapped"
+						Height="50" Background="White"
+						Margin="-8">
+						<Grid
+							ColumnDefinitions="100,*,*,*"
+							Margin="10">
+							<TextBlock Text="{Binding Id}" />
+							<TextBlock Grid.Column="1" Text="{Binding Name}"/>
+							<TextBlock Grid.Column="2" Text="{Binding IdCathegorieNavigation.Name}"/>
+							<TextBlock Grid.Column="3" Text="{Binding Date}"/>
+						</Grid>
+					</Panel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		<!--вывод общего и выведенного количеств объектов-->
+		<TextBlock
+			Name="tblock_itemsCount"
+			Grid.ColumnSpan="3" Grid.Row="3"
+			HorizontalAlignment="Center"
+			Margin="20" FontSize="20"
+			Text="0/0"/>
+	</Grid>
+</Window>
