@@ -369,3 +369,4 @@ C:\Users\etoch\source\repos\Uploader-main\DataUploaderApp\obj\Debug\net8.0\refin
 C:\Users\etoch\source\repos\Uploader-main\DataUploaderApp\obj\Debug\net8.0\DataUplo.29907C38.Up2Date
 C:\Users\etoch\source\repos\Uploader-main\DataUploaderApp\obj\Debug\net8.0\DataUploaderApp.genruntimeconfig.cache
 C:\Users\etoch\source\repos\Uploader-main\DataUploaderApp\obj\Debug\net8.0\ref\DataUploaderApp.dll
+C:\Users\etoch\source\repos\Uploader-main\DataUploaderApp\obj\Debug\net8.0\DataUploaderApp.sourcelink.json

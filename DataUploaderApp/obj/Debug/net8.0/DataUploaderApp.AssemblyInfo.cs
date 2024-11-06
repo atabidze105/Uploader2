@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataUploaderApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e708a3de7f702525bb3b12f070837ed79039090")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataUploaderApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataUploaderApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

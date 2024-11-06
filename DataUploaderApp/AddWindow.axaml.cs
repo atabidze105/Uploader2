@@ -10,7 +10,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using static Avalonia.Media.Imaging.Bitmap;
-using static DataUploaderApp.SavingDate;
+//using System.Windows.Media;
+
 
 namespace DataUploaderApp;
 
@@ -21,6 +22,9 @@ public partial class AddWindow : Window
 
     private string? _PictureFile = null;//_RedClient != null ? _RedClient.Photo : null; //изображение, которое изначально имеет объект (если оно у него есть, иначе null)
     private string? _SelectedImage = null; //выбранное изображение
+
+    private string _SelectedAudioPath = null;
+    private string _SelectedAudioName = null;
    
     public AddWindow()
     {
@@ -31,8 +35,11 @@ public partial class AddWindow : Window
         tblock_header.Text = "Добавить запись";
         btn_confirm.Content = "Добавить";
         cbox_cathegory.SelectedIndex = 0;
-        _Photos = new ObservableCollection<Bitmap>(_RedArticle.IdPhotos.Select(x => new Bitmap($"Assets/{x.Photo1}")));
-        lbox_images.ItemsSource = _Photos.ToList();
+
+
+
+        //_Photos = new ObservableCollection<Bitmap>(_RedArticle.IdPhotos.Select(x => new Bitmap($"Assets/{x.Photo1}")));
+        //lbox_images.ItemsSource = _Photos.ToList();
     }
 
     public AddWindow(Article redArticle)
@@ -44,8 +51,11 @@ public partial class AddWindow : Window
         tblock_header.Text = "Редактировать запись";
         btn_confirm.Content = "Сохранить";
         btn_del.IsVisible = true;
+
+        lbox_images.ItemsSource = _RedArticle.IdPhotos.ToList();
+
         _Photos = new ObservableCollection<Bitmap>(_RedArticle.IdPhotos.Select(x => new Bitmap($"Assets/{x.Photo1}")));
-        lbox_images.ItemsSource = _Photos.ToList();
+        //lbox_images.ItemsSource = _Photos.ToList();
     }
 
 
@@ -59,6 +69,7 @@ public partial class AddWindow : Window
     }
     private void ReturnToMain(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
+        
         MainWindow mainWindow = new MainWindow();
         mainWindow.Show();
         this.Close();
@@ -66,15 +77,12 @@ public partial class AddWindow : Window
 
     private void Button_Confirm(object? sender, Avalonia.Interactivity.RoutedEventArgs e)//Сохранить или добавить
     {
-        if (tbox_name.Text != null && tbox_description.Text != null)
+        if (tbox_name.Text != null && tbox_description.Text != null && tbox_name.Text != "" && tbox_description.Text != "")
         {
             if (_RedArticle.Id != 0)
             {
-                _RedArticle.Name = tbox_name.Text;
-                _RedArticle.Description = tbox_description.Text;
-                _RedArticle.Video = tboxlink.Text;
-                _RedArticle.IdCathegorie = cbox_cathegory.SelectedIndex + 1;
-                
+                if(_SelectedAudioPath != null && _SelectedAudioName != null)
+                    System.IO.File.Copy(_SelectedAudioPath, $"Assets/{_SelectedAudioName}", true);
                 Helper.DefaultDbContext.SaveChanges();
                 new MainWindow().Show();
                 Close();
@@ -94,10 +102,10 @@ public partial class AddWindow : Window
         }
     }
 
-    private async void Button_Click_2(object? sender, Avalonia.Interactivity.RoutedEventArgs e)//добавление фото
+    private async void Button_AddImage(object? sender, Avalonia.Interactivity.RoutedEventArgs e)//добавление фото
     {
         OpenFileDialog dialog = new(); //Открытие проводника
-        dialog.Filters.Add(fileFilter); //Применение фильтра
+        dialog.Filters.Add(fileFilterPictures); //Применение фильтра
 
         string[] result = await dialog.ShowAsync(this); //Выбор файла
         if (result == null || result.Length == 0 || new System.IO.FileInfo(result[0]).Length > 2000000)
@@ -114,9 +122,15 @@ public partial class AddWindow : Window
 
     }
 
-    private readonly FileDialogFilter fileFilter = new() //Фильтр для проводника
+    private readonly FileDialogFilter fileFilterPictures = new() //Фильтр для проводника
     {
         Extensions = new List<string>() { "jpg", "png" }, //доступные расширения, отображаемые в проводнике
+        Name = "Файлы изображений" //пояснение
+    };
+
+    private readonly FileDialogFilter fileFilterAudio = new() //Фильтр для проводника
+    {
+        Extensions = new List<string>() { "mp3", "wav" }, //доступные расширения, отображаемые в проводнике
         Name = "Файлы изображений" //пояснение
     };
 
@@ -126,6 +140,40 @@ public partial class AddWindow : Window
 
     private void Button_Delete(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
+        _RedArticle.IdPhotos.Clear();
+        Helper.DefaultDbContext.Articles.Remove(_RedArticle);
+        Helper.DefaultDbContext.SaveChanges();
+        MainWindow mainWindow = new MainWindow();
+        mainWindow.Show();
+        Close();
+    }
 
+    private async void Button_AddAudio(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        OpenFileDialog dialog = new(); //Открытие проводника
+        dialog.Filters.Add(fileFilterAudio); //Применение фильтра
+
+        string[] result = await dialog.ShowAsync(this); //Выбор файла
+        if (result == null || result.Length == 0)
+            return;
+
+        _SelectedAudioPath = result[0];
+        _SelectedAudioName = System.IO.Path.GetFileName(_SelectedAudioPath); //получение имени файла
+
+        btn_playAudio.IsVisible = true;
+        btn_deleteAudio.IsVisible = true;
+        tblock_previewAudio.IsVisible = true;
+        tblock_previewAudio.Text = _SelectedAudioName;
+    }
+
+    private void Button_PlayAudio(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        //var player = new MediaPlayer();
+        //Process.Start("wmplayer.exe", _SelectedAudioPath);
+        System.Diagnostics.Process.Start(new ProcessStartInfo
+        {
+            FileName = "C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe",
+            Arguments = _SelectedAudioPath
+        });
     }
 }
